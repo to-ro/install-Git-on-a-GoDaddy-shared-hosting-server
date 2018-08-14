@@ -31,35 +31,35 @@ So now Git is installed on your server, you can go ahead and create a Git reposi
 
   A. Go to the home directory:
 
-    `$ cd ~/public_html`
+    $ cd ~/public_html
 
   B. Initialise your Git repository:
 
-    `$ git init`
+    $ git init
     
   C. Change the permissions to protect your git repository, as it will be visible on the web:
 
-    `$ chmod 770 -R .git`
+    $ chmod 770 -R .git
     
   D. Accept pushes from your local repository:
 
-    `$ git config receive.denyCurrentBranch ignore`
+    $ git config receive.denyCurrentBranch ignore
 
   E. Go to the ‘hooks’ directory then edit the ‘post-receive’ file:
 
-    `$ cd .git/hooks`
+    $ cd .git/hooks
     
-    `$ nano post-receive`
+    $ nano post-receive
 
    Add the following into top of file:
 
-    `GIT_WORK_TREE=../ git checkout -f`
+    GIT_WORK_TREE=../ git checkout -f
   
   Save these changes to the file and exit it.
 
   F. Change the permissions for this file:
 
-    `$ chmod +x post-receive`
+    $ chmod +x post-receive
 
 That’s your Git repository set-up and all the necessary housekeeping done.
 
