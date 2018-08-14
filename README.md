@@ -1,5 +1,6 @@
 # install-Git-on-a-GoDaddy-shared-hosting-server
 How to install Git on a GoDaddy shared hosting serverinstall Git on a GoDaddy shared hosting server
+  *Copied/modified from this helpful article: https://adamboother.com/blog/install-git-on-a-godaddy-shared-hosting-account/*
 
 ## This is for a Linux shared hosting account with GoDaddy.
 
