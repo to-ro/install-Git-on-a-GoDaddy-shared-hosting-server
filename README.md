@@ -8,8 +8,9 @@ Server does not come with git pre-installed. Therefore you need to SSH to your s
 
 ### 1. Open Terminal and login to your hosting account:
 
-$ ssh yourusername@yourserver
-$ yourpassword
+`$ ssh yourusername@yourserver
+$ yourpassword`
+
 Note: To prevent having to enter your password every time you SSH to your server, set-up SSH key authentication. For anyone unsure how SSH keys work, GoDaddy explain this pretty well:
 
 The public and private key are similar to a puzzle. They are created together to use during the login/authentication process. The public key resides on the server (the remote location) The private key resides locally on your computer/server. When you attempt to login to a server, the public and private key are compared. If they “match”, then you will be allowed to login to the server location.
